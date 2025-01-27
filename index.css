@@ -264,3 +264,132 @@ body {
   text-transform: capitalize;
   color: #fff;
 }
+
+
+
+/* Global styles remain unchanged */
+
+/* Add responsive styles */
+@media (max-width: 1200px) {
+  #heading h1 {
+    font-size: 7vw;
+  }
+
+  #blocktext h5,
+  #chotiHeading h5 {
+    font-size: 1.2vw;
+  }
+
+  #about {
+    flex-direction: column;
+    padding: 5vw 5vw;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #textabout {
+    width: 90%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #about img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  #nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  #heroFooter {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #second .elem h1 {
+    font-size: 5vw;
+  }
+
+  #second .elem {
+    flex-direction: column;
+    text-align: center;
+    padding: 5vw 2vw;
+  }
+
+  #about {
+    padding: 5vw;
+    gap: 30px;
+  }
+
+  #textabout p {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #heading h1 {
+    font-size: 10vw;
+  }
+
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about img {
+    width: 120px;
+    height: 120px;
+  }
+
+  #footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  #footerLeft,
+  #footerRight {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  #nav {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #heading h1 {
+    font-size: 12vw;
+  }
+
+  #heroFooter {
+    gap: 10px;
+  }
+
+  #second .elem h1 {
+    font-size: 6vw;
+  }
+
+  #about {
+    padding: 5vw;
+  }
+
+  #textabout {
+    width: 100%;
+  }
+
+  #textabout p {
+    font-size: 14px;
+  }
+
+  #footer {
+    font-size: 12px;
+  }
+}
