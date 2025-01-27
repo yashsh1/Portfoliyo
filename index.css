@@ -265,8 +265,6 @@ body {
   color: #fff;
 }
 
-
-
 /* Global styles remain unchanged */
 
 /* Add responsive styles */
@@ -288,7 +286,7 @@ body {
   }
 
   #textabout {
-    width: 90%;
+    width: 90vh;
     margin-top: 20px;
     text-align: center;
   }
@@ -301,13 +299,16 @@ body {
 
 @media (max-width: 992px) {
   #nav {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
     gap: 10px;
   }
 
   #heroFooter {
-    flex-direction: column;
+    flex-direction: row;
+    /* flex-direction: column; */
+    justify-content: space-between;
     gap: 20px;
   }
 
@@ -316,7 +317,8 @@ body {
   }
 
   #second .elem {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
     padding: 5vw 2vw;
   }
@@ -328,6 +330,7 @@ body {
 
   #textabout p {
     margin-left: 0;
+    width: 90vw;
   }
 }
 
@@ -343,11 +346,13 @@ body {
 
   #about img {
     width: 120px;
+    border-radius: 50%;
     height: 120px;
   }
 
   #footer {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
     gap: 10px;
   }
